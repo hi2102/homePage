@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Single :: someday</title>
+</head>
+<body>
+  <h1>Digital Single Album - 'someday' Release!!</h1>
+  <ul>
+    <li><a href="#!someday" onclick="fetchPage('someday')">someday</a></li>
+    <li><a href="#!stayCloser" onclick="fetchPage('stayCloser')">stay closer</a></li>
+  </ul>
+  <article></article>
+  <script>
+    function fetchPage(name) {
+      fetch(name).then(function(response){
+        response.text().then(function(text){
+          document.querySelector('article').innerHTML = text;
+        })
+      });
+    }
+    // 해쉬값 정하기
+    if(location.hash) {
+      fetch(location.hash.substr(2));
+    } else {
+      // fetchPage('');
+    }
+  </script>
+</body>
+</html>
