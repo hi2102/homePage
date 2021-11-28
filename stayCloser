@@ -9,7 +9,7 @@
 <body>
   <section>
     <h1>stay closer</h1>
-    <p>Written By ji young Lee</p>
+    <p class="written">Written By ji young Lee</p>
     <h3>Verse 1</h3>
     <h4>Verse</h4>
     <p>오늘밤은 좀 취하고 싶어</p>

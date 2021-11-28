@@ -9,7 +9,7 @@
 <body>
   <section>
     <h1>someday</h1>
-    <p>Written By ji young Lee</p>
+    <p class="written">Written By ji young Lee</p>
     <h3>Verse 1</h3>
     <h4>Verse</h4>
     <p>난 가끔 내 자신에게 물어보곤 해</p>

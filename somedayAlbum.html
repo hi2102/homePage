@@ -5,14 +5,42 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Single :: someday</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <h1>Digital Single Album - 'someday' Release!!</h1>
-  <ul>
-    <li><a href="#!someday" onclick="fetchPage('someday')">someday</a></li>
-    <li><a href="#!stayCloser" onclick="fetchPage('stayCloser')">stay closer</a></li>
-  </ul>
-  <article></article>
+  <header>
+    <h1>Digital Single Album - 'someday' Release!!</h1>
+  </header>
+  <nav class="nav">
+    <ul class="nav">
+      <li><a href="#">About</a></li>
+      <li><a href="#">Blog</a></li>
+      <li><a href="#">Clips</a></li>
+      <li><a href="#">Discograghphy</a></li>
+    </ul>
+    <!-- A Search form is another commmon non-linear way to navigate through a website. -->
+    <form>
+      <input type="search" name="q" placeholder="">
+      <input type="submit" value="Go!">
+    </form>
+  </nav>
+    <main>
+      <!-- It contains an article -->
+      <article>
+      </article>
+
+      <!-- the aside content can also be nested within the main content -->
+      <aside>
+        <h2>Lyrics</h2>
+        <ul>
+          <li><a href="#!someday" title="someday Lyrics" onclick="fetchPage('someday')">someday</a></li>
+          <li><a href="#!stayCloser" title="stay closer Lyrics" onclick="fetchPage('stayCloser')">stay closer</a></li>
+        </ul> 
+      </aside>
+    </main>
+    <footer>
+      <p>©Copyright 2021 by STUDIO Forever Young. All rights reversed.</p>
+    </footer>
   <script>
     function fetchPage(name) {
       fetch(name).then(function(response){
@@ -28,5 +56,5 @@
       // fetchPage('');
     }
   </script>
-</body>
+  </body>
 </html>
